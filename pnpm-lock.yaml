@@ -53,6 +53,7 @@ specifiers:
   ember-qunit: ^5.1.5
   ember-resolver: ^8.0.3
   ember-source: ~4.3.0
+  ember-template-imports: ^2.0.1
   ember-template-lint: ^4.3.0
   ember-welcome-page: ^6.2.0
   eslint: ^7.32.0
@@ -122,6 +123,7 @@ devDependencies:
   ember-qunit: 5.1.5_t3jjcejb4cr2zippavidkjlupq
   ember-resolver: 8.0.3
   ember-source: 4.3.0_webpack@5.72.0
+  ember-template-imports: 2.0.1_ember-cli-htmlbars@6.0.1
   ember-template-lint: 4.6.0
   ember-welcome-page: 6.2.0
   eslint: 7.32.0
@@ -2925,6 +2927,11 @@ packages:
       babel-template: 6.26.0
     dev: true
 
+  /babel-import-util/0.2.0:
+    resolution: {integrity: sha512-CtWYYHU/MgK88rxMrLfkD356dApswtR/kWZ/c6JifG1m10e7tBBrs/366dFzWMAoqYmG5/JSh+94tUSpIwh+ag==}
+    engines: {node: '>= 12.*'}
+    dev: true
+
   /babel-import-util/1.2.2:
     resolution: {integrity: sha512-8HgkHWt5WawRFukO30TuaL9EiDUOdvyKtDwLma4uBNeUSDbOO0/hiPfavrOWxSS6J6TKXfukWHZ3wiqZhJ8ONQ==}
     engines: {node: '>= 12.*'}
@@ -5550,6 +5557,26 @@ packages:
       - '@babel/core'
       - supports-color
       - webpack
+    dev: true
+
+  /ember-template-imports/2.0.1_ember-cli-htmlbars@6.0.1:
+    resolution: {integrity: sha512-2J0p3NU1hyP9VW6FX7/IAQtJPP0jDg/4zS3E2aYGND7uzuFbGJRgz9Ifze7yKkgWd7EAGnCjDQYCm5jTLu8Fvg==}
+    engines: {node: 12.* || >= 14}
+    peerDependencies:
+      ember-cli-htmlbars: ^6.0.0
+    dependencies:
+      babel-import-util: 0.2.0
+      broccoli-stew: 3.0.0
+      ember-cli-babel-plugin-helpers: 1.1.1
+      ember-cli-htmlbars: 6.0.1
+      ember-cli-version-checker: 5.1.2
+      line-column: 1.0.2
+      magic-string: 0.25.9
+      parse-static-imports: 1.1.0
+      string.prototype.matchall: 4.0.7
+      validate-peer-dependencies: 1.2.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /ember-template-lint/4.6.0:
