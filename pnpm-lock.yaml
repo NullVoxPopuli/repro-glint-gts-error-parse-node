@@ -69,6 +69,7 @@ specifiers:
   eslint-plugin-node: ^11.1.0
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-qunit: ^7.2.0
+  glint-environment-ember-template-imports: ^0.0.4
   loader.js: ^4.7.0
   npm-run-all: ^4.1.5
   prettier: ^2.6.1
@@ -143,6 +144,7 @@ devDependencies:
   eslint-plugin-node: 11.1.0_eslint@7.32.0
   eslint-plugin-prettier: 4.0.0_evcial7aw3q6fcauxv2c7fxuoe
   eslint-plugin-qunit: 7.2.0_eslint@7.32.0
+  glint-environment-ember-template-imports: 0.0.4_q5b5vz5k6ljdm74xnc5tqjnnsu
   loader.js: 4.7.0
   npm-run-all: 4.1.5
   prettier: 2.6.2
@@ -8309,6 +8311,16 @@ packages:
   /git-repo-info/2.1.1:
     resolution: {integrity: sha512-8aCohiDo4jwjOwma4FmYFd3i97urZulL8XL24nIPxuE+GZnfsAyy/g2Shqx6OjUiFKUXZM+Yy+KHnOmmA3FVcg==}
     engines: {node: '>= 4.0'}
+    dev: true
+
+  /glint-environment-ember-template-imports/0.0.4_q5b5vz5k6ljdm74xnc5tqjnnsu:
+    resolution: {integrity: sha512-44H0r8jvaC9uW9+AfT1POT3CPFprOLTkqH0+aoDzqssgl+BgQjuCRk+vlj8joIp4/HlXKm2eT0jErfObPE2VtA==}
+    peerDependencies:
+      '@glint/environment-ember-loose': ^0.7.5
+      ember-template-imports: ^2.0.0
+    dependencies:
+      '@glint/environment-ember-loose': 0.8.0_iwlcl6vrdbzrll5er47jif5wgq
+      ember-template-imports: 2.0.1_ember-cli-htmlbars@6.0.1
     dev: true
 
   /glob-parent/3.1.0:
